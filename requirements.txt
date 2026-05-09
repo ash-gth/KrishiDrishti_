@@ -1,0 +1,46 @@
+# KrishiDrishti Backend Dependencies
+# Install with: pip install -r requirements.txt
+
+# ── Core Framework ────────────────────────────────────────────────────────────
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# ── MongoDB (Motor = async driver, pymongo = BSON utilities) ─────────────────
+motor==3.6.0
+pymongo==4.9.2
+
+# ── Pydantic + Settings ───────────────────────────────────────────────────────
+pydantic==2.10.3
+pydantic-settings==2.7.0
+
+# ── File Uploads ─────────────────────────────────────────────────────────────
+python-multipart==0.0.12
+
+# ── Image Processing ─────────────────────────────────────────────────────────
+Pillow==11.0.0
+opencv-python-headless==4.10.0.84
+
+# ── Async File I/O ────────────────────────────────────────────────────────────
+aiofiles==24.1.0
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+
+# ── ML (placeholders — install when integrating real model) ──────────────────
+# scikit-learn==1.5.2
+# tensorflow==2.17.0
+# torch==2.4.0
+# torchvision==0.19.0
+
+# ── Auth (optional — install when enabling JWT) ───────────────────────────────
+# python-jose[cryptography]==3.3.0
+# passlib[bcrypt]==1.7.4
+
+# ── Redis Caching (optional) ─────────────────────────────────────────────────
+# redis[asyncio]==5.2.1
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.24.0
+httpx==0.28.1               # Async test client for FastAPI
+anyio==4.7.0
